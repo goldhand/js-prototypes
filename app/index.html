@@ -10,6 +10,17 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
+
+    <!-- main app area -->
+    <section class="app-canvas" id="app-canvas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><div class="panel-list" id="panel-list"></div></div>
+                <div class="col-md-6"><div class="panel-detail" id="panel-detail"></div></div>
+            </div>
+        </div>
+    </section>
+
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
@@ -45,6 +56,44 @@
             </div>
 
         </div>
+    <!-- Templates -->
+    <section class="js-templates">
+        <div class="js-template" id="elemObjContainer">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1 class="title">{0}</h1>
+                </div>
+                <div class="panel-body">
+                    <p class="content">{1}</p>
+                </div>
+            </div>
+        </div>
+        <div class="js-template" id="panelObjContainer">
+            <div class="panel panel-{0}">
+                <div class="panel-heading">
+                    <h1 class="title">{1}</h1>
+                </div>
+                <div class="panel-body">
+                    <p class="content">{2}</p>
+                </div>
+            </div>
+        </div>
+        <div class="js-template" id="blogPostTemplate">
+            <div class="panel panel-{0}">
+                <div class="panel-heading">
+                    <h1 class="title">{1} <small>by: {2}</small></h1>
+                </div>
+                <div class="panel-body">
+                    <p class="content">{3}</p>
+                </div>
+                <div class="panel-footer">
+                    <p class="author">created: {4}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
         <script src="bower_components/jquery/jquery.min.js"></script>
         <!-- Begin VanillaJS Modules -->
         <!-- End VanillaJS Modules -->

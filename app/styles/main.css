@@ -85,3 +85,9 @@ body {
         border-bottom: 0;
     }
 }
+
+
+
+.js-templates, .js-templates * {
+    display: none;
+}
